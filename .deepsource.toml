@@ -1,9 +1,12 @@
 version = 1
 
 [[analyzers]]
-name = "scala"
+name = "go"
 enabled = true
 
+  [analyzers.meta]
+  import_root = "github.com/carboarded/gin"
+
 [[transformers]]
-name = "scalafmt"
+name = "gofumpt"
 enabled = true
